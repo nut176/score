@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>score</title>       
+    <style>
+        body {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <p id="message">🔮 마법의 NFC가 말하길... 🔮</p>
+    <button onclick="showRandomNumber()">눌러서 확인하기</button>
+
+    <script>
+        function showRandomNumber() {
+            // Generate a random number between 0 and 99
+            const randomNumber = Math.floor(Math.random() * 100);
+
+            // Display the random number
+            document.getElementById("message").innerText = `🎲 ${randomNumber} 🎲`;
+        }
+    </script>
+</body>
+</html>
